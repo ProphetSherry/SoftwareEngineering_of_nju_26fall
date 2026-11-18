@@ -1,0 +1,25 @@
+[  5%] Building CXX object CMakeFiles/campus_core.dir/src/database.cpp.o
+[ 11%] Building CXX object CMakeFiles/campus_core.dir/src/service.cpp.o
+[ 16%] Linking CXX static library libcampus_core.a
+[ 16%] Built target campus_core
+[ 22%] Building CXX object CMakeFiles/campus_tests.dir/tests/core_tests.cpp.o
+[ 33%] Building CXX object CMakeFiles/campus_cli.dir/src/cli.cpp.o
+[ 33%] Building CXX object CMakeFiles/campus_benchmark.dir/tools/benchmark.cpp.o
+[ 38%] Building CXX object CMakeFiles/campus_gui.dir/src/main.cpp.o
+[ 44%] Linking CXX executable campus_cli
+[ 50%] Linking CXX executable campus_benchmark
+[ 55%] Building CXX object CMakeFiles/campus_gui.dir/src/window.cpp.o
+[ 55%] Built target campus_cli
+[ 61%] Building CXX object CMakeFiles/campus_gui_tests.dir/tests/gui_tests.cpp.o
+[ 61%] Built target campus_benchmark
+[ 66%] Building CXX object CMakeFiles/campus_button_tests.dir/tests/button_tests.cpp.o
+[ 72%] Building CXX object CMakeFiles/campus_gui_tests.dir/src/window.cpp.o
+[ 77%] Linking CXX executable campus_tests
+[ 77%] Built target campus_tests
+[ 83%] Building CXX object CMakeFiles/campus_button_tests.dir/src/window.cpp.o
+[ 88%] Linking CXX executable campus_gui
+[ 88%] Built target campus_gui
+[ 94%] Linking CXX executable campus_gui_tests
+[ 94%] Built target campus_gui_tests
+[100%] Linking CXX executable campus_button_tests
+[100%] Built target campus_button_tests

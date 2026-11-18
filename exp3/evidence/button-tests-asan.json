@@ -1,0 +1,1348 @@
+{
+    "assertions": 1122,
+    "cases": [
+        {
+            "actual": "保持登录页，账号框获得焦点",
+            "area": "通用",
+            "assertions": 12,
+            "button": "登录页底部三个导航",
+            "expected": "保持登录页，账号框获得焦点",
+            "id": "L01",
+            "status": "PASS",
+            "steps": "依次点击发现活动、我的报名、操作记录"
+        },
+        {
+            "actual": "管理员创建成功且密码可登录",
+            "area": "通用",
+            "assertions": 5,
+            "button": "首次使用 · 初始化管理员",
+            "expected": "管理员创建成功且密码可登录",
+            "id": "L02",
+            "status": "PASS",
+            "steps": "填写账号密码，触发初始化菜单"
+        },
+        {
+            "actual": "提示已经初始化，不增加账号",
+            "area": "通用",
+            "assertions": 8,
+            "button": "重复初始化",
+            "expected": "提示已经初始化，不增加账号",
+            "id": "L03",
+            "status": "PASS",
+            "steps": "再次点击初始化菜单"
+        },
+        {
+            "actual": "拒绝并保持登录页",
+            "area": "通用",
+            "assertions": 9,
+            "button": "登录错误密码",
+            "expected": "拒绝并保持登录页",
+            "id": "L04",
+            "status": "PASS",
+            "steps": "密码改错后点击登录"
+        },
+        {
+            "actual": "进入管理员界面",
+            "area": "通用",
+            "assertions": 4,
+            "button": "密码框回车登录",
+            "expected": "进入管理员界面",
+            "id": "L05",
+            "status": "PASS",
+            "steps": "填写正确密码并触发回车信号"
+        },
+        {
+            "actual": "菜单可见，关闭不改变登录身份",
+            "area": "通用",
+            "assertions": 2,
+            "button": "右上角更多菜单",
+            "expected": "菜单可见，关闭不改变登录身份",
+            "id": "L06",
+            "status": "PASS",
+            "steps": "打开更多菜单后关闭"
+        },
+        {
+            "actual": "返回账号密码页",
+            "area": "通用",
+            "assertions": 4,
+            "button": "退出登录",
+            "expected": "返回账号密码页",
+            "id": "L07",
+            "status": "PASS",
+            "steps": "触发退出登录菜单"
+        },
+        {
+            "actual": "进入正确工作台，保持393×852",
+            "area": "导航",
+            "assertions": 7,
+            "button": "student 登录",
+            "expected": "进入正确工作台，保持393×852",
+            "id": "N01",
+            "status": "PASS",
+            "steps": "使用对应角色账号点击登录"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "student → 发现活动",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N02",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "student → 我的报名",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N03",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "student → 操作记录",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N04",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "消息列表或空状态正常显示",
+            "area": "导航",
+            "assertions": 4,
+            "button": "消息通知",
+            "expected": "消息列表或空状态正常显示",
+            "id": "N-MSG",
+            "status": "PASS",
+            "steps": "触发右上角消息通知"
+        },
+        {
+            "actual": "返回登录页",
+            "area": "导航",
+            "assertions": 4,
+            "button": "student 退出",
+            "expected": "返回登录页",
+            "id": "N05",
+            "status": "PASS",
+            "steps": "触发退出登录"
+        },
+        {
+            "actual": "进入正确工作台，保持393×852",
+            "area": "导航",
+            "assertions": 7,
+            "button": "organizer 登录",
+            "expected": "进入正确工作台，保持393×852",
+            "id": "N06",
+            "status": "PASS",
+            "steps": "使用对应角色账号点击登录"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "organizer → 我的活动",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N07",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "organizer → 报名与收退款",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N08",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "organizer → 统计与导出",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N09",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "organizer → 操作记录",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N10",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "两入口均进入我的申请",
+            "area": "导航",
+            "assertions": 9,
+            "button": "我的申请菜单与页面按钮",
+            "expected": "两入口均进入我的申请",
+            "id": "N-REQ",
+            "status": "PASS",
+            "steps": "分别通过活动页按钮和右上角菜单进入"
+        },
+        {
+            "actual": "返回登录页",
+            "area": "导航",
+            "assertions": 4,
+            "button": "organizer 退出",
+            "expected": "返回登录页",
+            "id": "N11",
+            "status": "PASS",
+            "steps": "触发退出登录"
+        },
+        {
+            "actual": "进入正确工作台，保持393×852",
+            "area": "导航",
+            "assertions": 7,
+            "button": "admin 登录",
+            "expected": "进入正确工作台，保持393×852",
+            "id": "N12",
+            "status": "PASS",
+            "steps": "使用对应角色账号点击登录"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "admin → 活动审核",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N13",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "admin → 账号管理",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N14",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "admin → 检票分配",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N15",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "admin → 操作记录",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N16",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "返回登录页",
+            "area": "导航",
+            "assertions": 4,
+            "button": "admin 退出",
+            "expected": "返回登录页",
+            "id": "N17",
+            "status": "PASS",
+            "steps": "触发退出登录"
+        },
+        {
+            "actual": "进入正确工作台，保持393×852",
+            "area": "导航",
+            "assertions": 7,
+            "button": "checker 登录",
+            "expected": "进入正确工作台，保持393×852",
+            "id": "N18",
+            "status": "PASS",
+            "steps": "使用对应角色账号点击登录"
+        },
+        {
+            "actual": "目标导航选中且对应页面加载",
+            "area": "导航",
+            "assertions": 3,
+            "button": "checker → 分配场次与检票",
+            "expected": "目标导航选中且对应页面加载",
+            "id": "N19",
+            "status": "PASS",
+            "steps": "点击底部导航"
+        },
+        {
+            "actual": "返回登录页",
+            "area": "导航",
+            "assertions": 4,
+            "button": "checker 退出",
+            "expected": "返回登录页",
+            "id": "N20",
+            "status": "PASS",
+            "steps": "触发退出登录"
+        },
+        {
+            "actual": "不改变原筛选及活动结果",
+            "area": "参与者",
+            "assertions": 6,
+            "button": "筛选取消",
+            "expected": "不改变原筛选及活动结果",
+            "id": "P01",
+            "status": "PASS",
+            "steps": "打开筛选表单后点击取消"
+        },
+        {
+            "actual": "仅显示同时匹配的音乐会",
+            "area": "参与者",
+            "assertions": 6,
+            "button": "筛选确认",
+            "expected": "仅显示同时匹配的音乐会",
+            "id": "P02",
+            "status": "PASS",
+            "steps": "输入音乐会、文艺演出、仙林并确认"
+        },
+        {
+            "actual": "显示暂无记录",
+            "area": "参与者",
+            "assertions": 4,
+            "button": "搜索框回车",
+            "expected": "显示暂无记录",
+            "id": "P03",
+            "status": "PASS",
+            "steps": "输入不存在的关键词并回车"
+        },
+        {
+            "actual": "恢复两项演示活动",
+            "area": "参与者",
+            "assertions": 6,
+            "button": "清空组合筛选",
+            "expected": "恢复两项演示活动",
+            "id": "P04",
+            "status": "PASS",
+            "steps": "筛选四项全部清空后确认"
+        },
+        {
+            "actual": "筛选更新且没有异常弹窗",
+            "area": "参与者",
+            "assertions": 12,
+            "button": "类别地点日期下拉框",
+            "expected": "筛选更新且没有异常弹窗",
+            "id": "P05",
+            "status": "PASS",
+            "steps": "逐一选择首个非空选项再清空"
+        },
+        {
+            "actual": "展示场次地点、截止和简介",
+            "area": "参与者",
+            "assertions": 3,
+            "button": "查看活动",
+            "expected": "展示场次地点、截止和简介",
+            "id": "P06",
+            "status": "PASS",
+            "steps": "点击音乐会卡片查看活动"
+        },
+        {
+            "actual": "恢复发现活动列表",
+            "area": "参与者",
+            "assertions": 3,
+            "button": "返回发现活动",
+            "expected": "恢复发现活动列表",
+            "id": "P07",
+            "status": "PASS",
+            "steps": "从详情点击返回"
+        },
+        {
+            "actual": "显示票种余量及应付金额",
+            "area": "参与者",
+            "assertions": 5,
+            "button": "选择票种",
+            "expected": "显示票种余量及应付金额",
+            "id": "P08",
+            "status": "PASS",
+            "steps": "进入新活动详情并选择票种"
+        },
+        {
+            "actual": "选中对应票种",
+            "area": "参与者",
+            "assertions": 2,
+            "button": "票种单选按钮",
+            "expected": "选中对应票种",
+            "id": "P09",
+            "status": "PASS",
+            "steps": "点击票种单选框"
+        },
+        {
+            "actual": "场次仍可选择，票种页可再次打开",
+            "area": "参与者",
+            "assertions": 5,
+            "button": "返回活动详情",
+            "expected": "场次仍可选择，票种页可再次打开",
+            "id": "P10",
+            "status": "PASS",
+            "steps": "从票种页面点击返回详情再进入"
+        },
+        {
+            "actual": "创建已报名记录并进入我的报名",
+            "area": "参与者",
+            "assertions": 3,
+            "button": "确认报名",
+            "expected": "创建已报名记录并进入我的报名",
+            "id": "P11",
+            "status": "PASS",
+            "steps": "免费票点击确认报名"
+        },
+        {
+            "actual": "本人记录取消且保留历史",
+            "area": "参与者",
+            "assertions": 3,
+            "button": "取消报名卡片按钮",
+            "expected": "本人记录取消且保留历史",
+            "id": "P12",
+            "status": "PASS",
+            "steps": "点击新活动卡片取消报名"
+        },
+        {
+            "actual": "拒绝重新报名，记录仍只有一条",
+            "area": "参与者",
+            "assertions": 12,
+            "button": "重复报名拦截",
+            "expected": "拒绝重新报名，记录仍只有一条",
+            "id": "P13",
+            "status": "PASS",
+            "steps": "取消后再次从票种页确认报名"
+        },
+        {
+            "actual": "菜单取消正确的本人待付款记录",
+            "area": "参与者",
+            "assertions": 6,
+            "button": "取消本人报名菜单",
+            "expected": "菜单取消正确的本人待付款记录",
+            "id": "P14",
+            "status": "PASS",
+            "steps": "选中演示音乐会报名并通过菜单取消"
+        },
+        {
+            "actual": "选择改变，应付金额分别为20和35元",
+            "area": "参与者",
+            "assertions": 9,
+            "button": "多个票种单选与价格更新",
+            "expected": "选择改变，应付金额分别为20和35元",
+            "id": "P15",
+            "status": "PASS",
+            "steps": "进入音乐会票种页并切换普通票和前排票"
+        },
+        {
+            "actual": "不创建活动，返回我的活动",
+            "area": "完整草稿",
+            "assertions": 6,
+            "button": "新建活动与取消返回",
+            "expected": "不创建活动，返回我的活动",
+            "id": "D01",
+            "status": "PASS",
+            "steps": "打开完整表单后点击取消"
+        },
+        {
+            "actual": "提示必填并保留表单",
+            "area": "完整草稿",
+            "assertions": 11,
+            "button": "保存空名称",
+            "expected": "提示必填并保留表单",
+            "id": "D02",
+            "status": "PASS",
+            "steps": "新建活动，名称留空点击保存"
+        },
+        {
+            "actual": "表单增加第二个场次",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "添加场次 ＋",
+            "expected": "表单增加第二个场次",
+            "id": "D03",
+            "status": "PASS",
+            "steps": "点击添加场次"
+        },
+        {
+            "actual": "只剩第一场且未写入数据库",
+            "area": "完整草稿",
+            "assertions": 4,
+            "button": "移除此场次",
+            "expected": "只剩第一场且未写入数据库",
+            "id": "D04",
+            "status": "PASS",
+            "steps": "移除第二场"
+        },
+        {
+            "actual": "出现第二个票种表单",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "添加票种 ＋",
+            "expected": "出现第二个票种表单",
+            "id": "D05",
+            "status": "PASS",
+            "steps": "在第一场点击添加票种"
+        },
+        {
+            "actual": "保留首个票种",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "移除此票种",
+            "expected": "保留首个票种",
+            "id": "D06",
+            "status": "PASS",
+            "steps": "移除第二个票种"
+        },
+        {
+            "actual": "生成3个不重复编号",
+            "area": "完整草稿",
+            "assertions": 5,
+            "button": "按容量生成座位编号",
+            "expected": "生成3个不重复编号",
+            "id": "D07",
+            "status": "PASS",
+            "steps": "容量改为3，点击生成座位"
+        },
+        {
+            "actual": "场次票种及3个座位整体保存",
+            "area": "完整草稿",
+            "assertions": 9,
+            "button": "保存活动草稿",
+            "expected": "场次票种及3个座位整体保存",
+            "id": "D08",
+            "status": "PASS",
+            "steps": "填写中文基本信息、地点并保存"
+        },
+        {
+            "actual": "载入名称及原场次票种",
+            "area": "完整草稿",
+            "assertions": 7,
+            "button": "编辑活动卡片",
+            "expected": "载入名称及原场次票种",
+            "id": "D09",
+            "status": "PASS",
+            "steps": "重新打开已存草稿"
+        },
+        {
+            "actual": "新建待审核发布申请",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "卡片提交发布审核",
+            "expected": "新建待审核发布申请",
+            "id": "D10",
+            "status": "PASS",
+            "steps": "点击草稿卡片提交审核"
+        },
+        {
+            "actual": "进入我的申请且显示撤回按钮",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "查看待审核申请",
+            "expected": "进入我的申请且显示撤回按钮",
+            "id": "D11",
+            "status": "PASS",
+            "steps": "点击活动卡片查看待审核申请"
+        },
+        {
+            "actual": "申请已撤回，草稿可以继续编辑",
+            "area": "完整草稿",
+            "assertions": 3,
+            "button": "撤回申请卡片按钮",
+            "expected": "申请已撤回，草稿可以继续编辑",
+            "id": "D12",
+            "status": "PASS",
+            "steps": "点击待审核发布申请撤回"
+        },
+        {
+            "actual": "可在撤回后重新提交",
+            "area": "完整草稿",
+            "assertions": 6,
+            "button": "菜单提交发布审核",
+            "expected": "可在撤回后重新提交",
+            "id": "D13",
+            "status": "PASS",
+            "steps": "回到活动页触发提交菜单"
+        },
+        {
+            "actual": "原申请撤回且历史保留",
+            "area": "完整草稿",
+            "assertions": 4,
+            "button": "撤回待审核申请活动按钮",
+            "expected": "原申请撤回且历史保留",
+            "id": "D14",
+            "status": "PASS",
+            "steps": "从活动卡片直接撤回"
+        },
+        {
+            "actual": "拒绝提交并保留表单，原草稿未修改",
+            "area": "完整草稿",
+            "assertions": 16,
+            "button": "提交不合法时间",
+            "expected": "拒绝提交并保留表单，原草稿未修改",
+            "id": "D14B",
+            "status": "PASS",
+            "steps": "将报名截止设在开始之后，点击保存提交"
+        },
+        {
+            "actual": "完整配置和新申请共同保存",
+            "area": "完整草稿",
+            "assertions": 7,
+            "button": "保存并提交发布审核",
+            "expected": "完整配置和新申请共同保存",
+            "id": "D15",
+            "status": "PASS",
+            "steps": "编辑已配置草稿并点击保存提交"
+        },
+        {
+            "actual": "弹窗含活动和场次快照",
+            "area": "完整草稿",
+            "assertions": 4,
+            "button": "查看原版本与申请内容",
+            "expected": "弹窗含活动和场次快照",
+            "id": "D16",
+            "status": "PASS",
+            "steps": "打开申请内容对照后关闭"
+        },
+        {
+            "actual": "显示活动快照且无修改",
+            "area": "完整草稿",
+            "assertions": 5,
+            "button": "查看原内容与候选内容菜单",
+            "expected": "显示活动快照且无修改",
+            "id": "D16B",
+            "status": "PASS",
+            "steps": "通过菜单打开申请快照并关闭"
+        },
+        {
+            "actual": "最新申请已撤回",
+            "area": "完整草稿",
+            "assertions": 4,
+            "button": "撤回选中申请菜单",
+            "expected": "最新申请已撤回",
+            "id": "D17",
+            "status": "PASS",
+            "steps": "触发撤回菜单"
+        },
+        {
+            "actual": "首次发布成功且创建版本快照",
+            "area": "完整草稿",
+            "assertions": 15,
+            "button": "管理员批准首次发布",
+            "expected": "首次发布成功且创建版本快照",
+            "id": "D18",
+            "status": "PASS",
+            "steps": "重新提交草稿后管理员在卡片点击通过"
+        },
+        {
+            "actual": "草稿没有新增场次",
+            "area": "草稿快捷菜单",
+            "assertions": 7,
+            "button": "添加场次取消",
+            "expected": "草稿没有新增场次",
+            "id": "O01",
+            "status": "PASS",
+            "steps": "打开添加场次表单并取消"
+        },
+        {
+            "actual": "新增场次且配置正确",
+            "area": "草稿快捷菜单",
+            "assertions": 8,
+            "button": "添加场次确认",
+            "expected": "新增场次且配置正确",
+            "id": "O02",
+            "status": "PASS",
+            "steps": "填写名称地点日期容量并确认"
+        },
+        {
+            "actual": "不增加票种且不弹错误警告",
+            "area": "草稿快捷菜单",
+            "assertions": 8,
+            "button": "添加票种取消选择",
+            "expected": "不增加票种且不弹错误警告",
+            "id": "O03",
+            "status": "PASS",
+            "steps": "选择场次弹窗中取消"
+        },
+        {
+            "actual": "增加2座位票种",
+            "area": "草稿快捷菜单",
+            "assertions": 12,
+            "button": "添加票种确认",
+            "expected": "增加2座位票种",
+            "id": "O04",
+            "status": "PASS",
+            "steps": "选择场次并填写票名价格座位"
+        },
+        {
+            "actual": "提示重复座位且不留下半个票种",
+            "area": "草稿快捷菜单",
+            "assertions": 15,
+            "button": "新增票种座位冲突",
+            "expected": "提示重复座位且不留下半个票种",
+            "id": "O04B",
+            "status": "PASS",
+            "steps": "使用原票种已经占用的Z01再次创建票种"
+        },
+        {
+            "actual": "原场次不变且无错误警告",
+            "area": "草稿快捷菜单",
+            "assertions": 11,
+            "button": "编辑草稿场次取消",
+            "expected": "原场次不变且无错误警告",
+            "id": "O05",
+            "status": "PASS",
+            "steps": "选择场次后取消名称输入"
+        },
+        {
+            "actual": "修改整组场次字段",
+            "area": "草稿快捷菜单",
+            "assertions": 26,
+            "button": "编辑草稿场次确认",
+            "expected": "修改整组场次字段",
+            "id": "O06",
+            "status": "PASS",
+            "steps": "依次填写名称地点时间容量"
+        },
+        {
+            "actual": "票种名称价格座位同步更新",
+            "area": "草稿快捷菜单",
+            "assertions": 21,
+            "button": "编辑草稿票种确认",
+            "expected": "票种名称价格座位同步更新",
+            "id": "O07",
+            "status": "PASS",
+            "steps": "选择票种后修改名称座位和价格"
+        },
+        {
+            "actual": "提示重复且原票种和座位整体回滚",
+            "area": "草稿快捷菜单",
+            "assertions": 25,
+            "button": "编辑票种重复座位",
+            "expected": "提示重复且原票种和座位整体回滚",
+            "id": "O07B",
+            "status": "PASS",
+            "steps": "把原票种座位填写为两个相同编号"
+        },
+        {
+            "actual": "票种不删除，无错误警告",
+            "area": "草稿快捷菜单",
+            "assertions": 11,
+            "button": "删除票种取消",
+            "expected": "票种不删除，无错误警告",
+            "id": "O08",
+            "status": "PASS",
+            "steps": "输入删除范围后取消场次选择"
+        },
+        {
+            "actual": "票种及座位删除",
+            "area": "草稿快捷菜单",
+            "assertions": 15,
+            "button": "删除草稿票种",
+            "expected": "票种及座位删除",
+            "id": "O09",
+            "status": "PASS",
+            "steps": "选择ticket范围、场次和票种"
+        },
+        {
+            "actual": "场次删除",
+            "area": "草稿快捷菜单",
+            "assertions": 11,
+            "button": "删除草稿场次",
+            "expected": "场次删除",
+            "id": "O10",
+            "status": "PASS",
+            "steps": "选择session范围并确认场次"
+        },
+        {
+            "actual": "草稿活动消失",
+            "area": "草稿快捷菜单",
+            "assertions": 4,
+            "button": "删除草稿菜单",
+            "expected": "草稿活动消失",
+            "id": "O11",
+            "status": "PASS",
+            "steps": "触发删除草稿菜单"
+        },
+        {
+            "actual": "仅删除目标草稿",
+            "area": "草稿快捷菜单",
+            "assertions": 5,
+            "button": "删除草稿卡片",
+            "expected": "仅删除目标草稿",
+            "id": "O12",
+            "status": "PASS",
+            "steps": "建立未提交草稿并点击卡片删除"
+        },
+        {
+            "actual": "原版本不变，无新增申请",
+            "area": "审核",
+            "assertions": 6,
+            "button": "已发布编辑取消",
+            "expected": "原版本不变，无新增申请",
+            "id": "R01",
+            "status": "PASS",
+            "steps": "打开已发布编辑表单后取消"
+        },
+        {
+            "actual": "完整表单的活动、场次和票种生成同一候选版本，原内容不变",
+            "area": "审核",
+            "assertions": 7,
+            "button": "编辑活动 / 申请发布后修改",
+            "expected": "完整表单的活动、场次和票种生成同一候选版本，原内容不变",
+            "id": "R02",
+            "status": "PASS",
+            "steps": "修改基本信息并确认"
+        },
+        {
+            "actual": "候选场次保存，现行场次不变",
+            "area": "审核",
+            "assertions": 24,
+            "button": "为修改申请添加场次变更",
+            "expected": "候选场次保存，现行场次不变",
+            "id": "R03",
+            "status": "PASS",
+            "steps": "选择原场次，填写新地点、时间和容量"
+        },
+        {
+            "actual": "候选票种保存但未发布",
+            "area": "审核",
+            "assertions": 20,
+            "button": "修改申请中新增票种",
+            "expected": "候选票种保存但未发布",
+            "id": "R04",
+            "status": "PASS",
+            "steps": "选择场次，选择新增，填写票价和座位"
+        },
+        {
+            "actual": "候选原票种可保存",
+            "area": "审核",
+            "assertions": 24,
+            "button": "修改申请中修改原票种",
+            "expected": "候选原票种可保存",
+            "id": "R05",
+            "status": "PASS",
+            "steps": "选择已有票种并修改候选名称"
+        },
+        {
+            "actual": "申请仍待审核，无错误警告",
+            "area": "审核",
+            "assertions": 6,
+            "button": "通过审核取消",
+            "expected": "申请仍待审核，无错误警告",
+            "id": "R06",
+            "status": "PASS",
+            "steps": "点击通过后取消意见输入"
+        },
+        {
+            "actual": "候选名称地点票种版本一起生效",
+            "area": "审核",
+            "assertions": 8,
+            "button": "通过审核确认",
+            "expected": "候选名称地点票种版本一起生效",
+            "id": "R07",
+            "status": "PASS",
+            "steps": "填写意见并确认"
+        },
+        {
+            "actual": "明确拒绝空原因，申请保持待审核",
+            "area": "审核",
+            "assertions": 10,
+            "button": "拒绝申请空原因",
+            "expected": "明确拒绝空原因，申请保持待审核",
+            "id": "R08",
+            "status": "PASS",
+            "steps": "拒绝时输入空原因"
+        },
+        {
+            "actual": "申请被拒绝，原发布内容保留",
+            "area": "审核",
+            "assertions": 6,
+            "button": "拒绝申请有效原因",
+            "expected": "申请被拒绝，原发布内容保留",
+            "id": "R09",
+            "status": "PASS",
+            "steps": "填写拒绝原因并确认"
+        },
+        {
+            "actual": "生成范围正确的取消审核申请",
+            "area": "审核",
+            "assertions": 6,
+            "button": "申请取消 event",
+            "expected": "生成范围正确的取消审核申请",
+            "id": "R-C1",
+            "status": "PASS",
+            "steps": "从活动卡片选择对应取消范围"
+        },
+        {
+            "actual": "目标活动/场次/票种取消",
+            "area": "审核",
+            "assertions": 6,
+            "button": "批准取消 event",
+            "expected": "目标活动/场次/票种取消",
+            "id": "R-CA1",
+            "status": "PASS",
+            "steps": "管理员通过对应范围的取消申请"
+        },
+        {
+            "actual": "生成范围正确的取消审核申请",
+            "area": "审核",
+            "assertions": 10,
+            "button": "申请取消 session",
+            "expected": "生成范围正确的取消审核申请",
+            "id": "R-C2",
+            "status": "PASS",
+            "steps": "从活动卡片选择对应取消范围"
+        },
+        {
+            "actual": "目标活动/场次/票种取消",
+            "area": "审核",
+            "assertions": 6,
+            "button": "批准取消 session",
+            "expected": "目标活动/场次/票种取消",
+            "id": "R-CA2",
+            "status": "PASS",
+            "steps": "管理员通过对应范围的取消申请"
+        },
+        {
+            "actual": "生成范围正确的取消审核申请",
+            "area": "审核",
+            "assertions": 14,
+            "button": "申请取消 ticket",
+            "expected": "生成范围正确的取消审核申请",
+            "id": "R-C3",
+            "status": "PASS",
+            "steps": "从活动卡片选择对应取消范围"
+        },
+        {
+            "actual": "目标活动/场次/票种取消",
+            "area": "审核",
+            "assertions": 6,
+            "button": "批准取消 ticket",
+            "expected": "目标活动/场次/票种取消",
+            "id": "R-CA3",
+            "status": "PASS",
+            "steps": "管理员通过对应范围的取消申请"
+        },
+        {
+            "actual": "账号数不变",
+            "area": "账号",
+            "assertions": 6,
+            "button": "创建新账号取消",
+            "expected": "账号数不变",
+            "id": "A01",
+            "status": "PASS",
+            "steps": "打开创建表单后取消"
+        },
+        {
+            "actual": "新账号可见且角色正确",
+            "area": "账号",
+            "assertions": 7,
+            "button": "创建新账号确认",
+            "expected": "新账号可见且角色正确",
+            "id": "A02",
+            "status": "PASS",
+            "steps": "填写中文姓名、密码，选择检票角色"
+        },
+        {
+            "actual": "拒绝重复账号且无第二条记录",
+            "area": "账号",
+            "assertions": 10,
+            "button": "重复账号创建",
+            "expected": "拒绝重复账号且无第二条记录",
+            "id": "A03",
+            "status": "PASS",
+            "steps": "再次使用相同登录名创建"
+        },
+        {
+            "actual": "提示密码要求，不创建账号",
+            "area": "账号",
+            "assertions": 10,
+            "button": "创建账号短密码",
+            "expected": "提示密码要求，不创建账号",
+            "id": "A04",
+            "status": "PASS",
+            "steps": "使用不足8位密码创建"
+        },
+        {
+            "actual": "姓名未保存",
+            "area": "账号",
+            "assertions": 7,
+            "button": "编辑 › 与取消返回",
+            "expected": "姓名未保存",
+            "id": "A05",
+            "status": "PASS",
+            "steps": "打开新增检票员编辑页，修改后取消"
+        },
+        {
+            "actual": "姓名与启用状态同时保存",
+            "area": "账号",
+            "assertions": 9,
+            "button": "保存账号修改",
+            "expected": "姓名与启用状态同时保存",
+            "id": "A06",
+            "status": "PASS",
+            "steps": "修改姓名并将启用改为停用后保存"
+        },
+        {
+            "actual": "仅目标账号启用",
+            "area": "账号",
+            "assertions": 4,
+            "button": "启用 / 停用菜单",
+            "expected": "仅目标账号启用",
+            "id": "A07",
+            "status": "PASS",
+            "steps": "选中检票员卡片后触发启用菜单"
+        },
+        {
+            "actual": "状态依次改变且其他账号不变",
+            "area": "账号",
+            "assertions": 8,
+            "button": "停用及重新启用菜单",
+            "expected": "状态依次改变且其他账号不变",
+            "id": "A07B",
+            "status": "PASS",
+            "steps": "对同一人员先停用再启用"
+        },
+        {
+            "actual": "显示正确账号和当前角色",
+            "area": "账号",
+            "assertions": 7,
+            "button": "编辑账号菜单",
+            "expected": "显示正确账号和当前角色",
+            "id": "A08",
+            "status": "PASS",
+            "steps": "选中检票员并通过菜单进入编辑"
+        },
+        {
+            "actual": "空姓名被拒绝，合法角色修改生效",
+            "area": "账号",
+            "assertions": 24,
+            "button": "编辑角色与空姓名拒绝",
+            "expected": "空姓名被拒绝，合法角色修改生效",
+            "id": "A08B",
+            "status": "PASS",
+            "steps": "先尝试空姓名，再修正角色并保存，最后改回检票员"
+        },
+        {
+            "actual": "自身角色和启用控件禁用",
+            "area": "账号",
+            "assertions": 8,
+            "button": "保护当前管理员",
+            "expected": "自身角色和启用控件禁用",
+            "id": "A09",
+            "status": "PASS",
+            "steps": "打开当前管理员编辑表单"
+        },
+        {
+            "actual": "拒绝自我停用，管理员仍启用",
+            "area": "账号",
+            "assertions": 8,
+            "button": "当前管理员停用菜单",
+            "expected": "拒绝自我停用，管理员仍启用",
+            "id": "A09B",
+            "status": "PASS",
+            "steps": "选择admin卡片并触发停用菜单"
+        },
+        {
+            "actual": "列表显示2名已分配人员",
+            "area": "检票分配",
+            "assertions": 5,
+            "button": "确认分配",
+            "expected": "列表显示2名已分配人员",
+            "id": "A10",
+            "status": "PASS",
+            "steps": "为音乐会新增button_checker"
+        },
+        {
+            "actual": "已分配人员不重复出现，空列表不能提交",
+            "area": "检票分配",
+            "assertions": 3,
+            "button": "新增候选排除重复",
+            "expected": "已分配人员不重复出现，空列表不能提交",
+            "id": "A11",
+            "status": "PASS",
+            "steps": "新增完成后检查候选与确认按钮"
+        },
+        {
+            "actual": "仅撤销所选人员，保留其他检票员",
+            "area": "检票分配",
+            "assertions": 6,
+            "button": "确认撤销分配",
+            "expected": "仅撤销所选人员，保留其他检票员",
+            "id": "A12",
+            "status": "PASS",
+            "steps": "切换撤销模式，选择button_checker并撤销"
+        },
+        {
+            "actual": "新场次可独立分配，旧场次不受影响",
+            "area": "检票分配",
+            "assertions": 7,
+            "button": "活动场次人员联动",
+            "expected": "新场次可独立分配，旧场次不受影响",
+            "id": "A13",
+            "status": "PASS",
+            "steps": "切换新增模式和免费讲座，分配同一人员"
+        },
+        {
+            "actual": "冲突检票员不显示为可新增",
+            "area": "检票分配",
+            "assertions": 6,
+            "button": "刷新与时间冲突过滤",
+            "expected": "冲突检票员不显示为可新增",
+            "id": "A14",
+            "status": "PASS",
+            "steps": "刷新并切换到时间重叠场次"
+        },
+        {
+            "actual": "出现新可分配账号并启用确认按钮",
+            "area": "检票分配",
+            "assertions": 5,
+            "button": "创建新人员后刷新",
+            "expected": "出现新可分配账号并启用确认按钮",
+            "id": "A15",
+            "status": "PASS",
+            "steps": "后台新增第三检票员，点击刷新"
+        },
+        {
+            "actual": "不分配过期场次，历史授权可移除",
+            "area": "检票分配",
+            "assertions": 10,
+            "button": "已结束场次切换与撤销",
+            "expected": "不分配过期场次，历史授权可移除",
+            "id": "A16",
+            "status": "PASS",
+            "steps": "新增模式不显示过期活动，撤销模式可撤销历史授权"
+        },
+        {
+            "actual": "状态仍待付款，金额不变",
+            "area": "收款",
+            "assertions": 6,
+            "button": "确认线下收款 → 否",
+            "expected": "状态仍待付款，金额不变",
+            "id": "M01",
+            "status": "PASS",
+            "steps": "选中待付款报名，取消实际收款确认"
+        },
+        {
+            "actual": "报名已确认且只记录2000分",
+            "area": "收款",
+            "assertions": 6,
+            "button": "确认线下收款 → 是",
+            "expected": "报名已确认且只记录2000分",
+            "id": "M02",
+            "status": "PASS",
+            "steps": "核实收到20元后确认"
+        },
+        {
+            "actual": "拒绝重复收款，金额不增加",
+            "area": "收款",
+            "assertions": 11,
+            "button": "重复确认收款菜单",
+            "expected": "拒绝重复收款，金额不增加",
+            "id": "M03",
+            "status": "PASS",
+            "steps": "选择已付款记录再次确认收款"
+        },
+        {
+            "actual": "退款任务仍待处理",
+            "area": "退款",
+            "assertions": 10,
+            "button": "确认线下退款 → 否",
+            "expected": "退款任务仍待处理",
+            "id": "M04",
+            "status": "PASS",
+            "steps": "选择原收款后取消退款确认"
+        },
+        {
+            "actual": "全额退款完成，不恢复报名",
+            "area": "退款",
+            "assertions": 10,
+            "button": "确认线下退款 → 是",
+            "expected": "全额退款完成，不恢复报名",
+            "id": "M05",
+            "status": "PASS",
+            "steps": "选择原收款并确认已完成退款"
+        },
+        {
+            "actual": "只显示已取消报名卡片",
+            "area": "名单",
+            "assertions": 2,
+            "button": "报名状态筛选",
+            "expected": "只显示已取消报名卡片",
+            "id": "M06",
+            "status": "PASS",
+            "steps": "选择已取消筛选项"
+        },
+        {
+            "actual": "不生成收款与退款记录",
+            "area": "异常收款",
+            "assertions": 7,
+            "button": "异常实收金额取消",
+            "expected": "不生成收款与退款记录",
+            "id": "M07",
+            "status": "PASS",
+            "steps": "选择过期报名，取消金额输入"
+        },
+        {
+            "actual": "记录实收与全额待退款，报名仍取消",
+            "area": "异常收款",
+            "assertions": 7,
+            "button": "登记异常实收确认",
+            "expected": "记录实收与全额待退款，报名仍取消",
+            "id": "M08",
+            "status": "PASS",
+            "steps": "对超时报名登记实际2000分"
+        },
+        {
+            "actual": "异常实收退款完成，报名不恢复",
+            "area": "退款",
+            "assertions": 11,
+            "button": "确认已完成线下全额退款菜单",
+            "expected": "异常实收退款完成，报名不恢复",
+            "id": "M09",
+            "status": "PASS",
+            "steps": "选中异常实收报名，通过菜单选择原收款并确认退款"
+        },
+        {
+            "actual": "容量数字与筛选后的导出条件匹配",
+            "area": "统计导出",
+            "assertions": 2,
+            "button": "活动场次票种状态筛选",
+            "expected": "容量数字与筛选后的导出条件匹配",
+            "id": "Q01",
+            "status": "PASS",
+            "steps": "选择音乐会、第一场、普通票及待付款"
+        },
+        {
+            "actual": "不创建文件",
+            "area": "统计导出",
+            "assertions": 5,
+            "button": "导出CSV取消",
+            "expected": "不创建文件",
+            "id": "Q02",
+            "status": "PASS",
+            "steps": "打开保存文件窗口后取消"
+        },
+        {
+            "actual": "UTF-8名单包含目标报名，不含被筛掉人员",
+            "area": "统计导出",
+            "assertions": 6,
+            "button": "导出CSV保存",
+            "expected": "UTF-8名单包含目标报名，不含被筛掉人员",
+            "id": "Q03",
+            "status": "PASS",
+            "steps": "选择临时文件并确认保存"
+        },
+        {
+            "actual": "仅显示匹配创建报名日志",
+            "area": "日志",
+            "assertions": 4,
+            "button": "查询日志有效组合",
+            "expected": "仅显示匹配创建报名日志",
+            "id": "Q04",
+            "status": "PASS",
+            "steps": "输入活动1与register后查询"
+        },
+        {
+            "actual": "无匹配，不扩大数据范围",
+            "area": "日志",
+            "assertions": 4,
+            "button": "查询日志空结果与SQL字符",
+            "expected": "无匹配，不扩大数据范围",
+            "id": "Q05",
+            "status": "PASS",
+            "steps": "将活动编号改为1 OR 1=1后查询"
+        },
+        {
+            "actual": "合法数据库通过检查，无错误警告",
+            "area": "备份",
+            "assertions": 2,
+            "button": "检查数据完整性",
+            "expected": "合法数据库通过检查，无错误警告",
+            "id": "Q06",
+            "status": "PASS",
+            "steps": "点击检查数据完整性"
+        },
+        {
+            "actual": "不创建备份文件",
+            "area": "备份",
+            "assertions": 5,
+            "button": "备份数据库取消",
+            "expected": "不创建备份文件",
+            "id": "Q07",
+            "status": "PASS",
+            "steps": "取消备份路径选择"
+        },
+        {
+            "actual": "备份可打开且账号报名日志数量一致",
+            "area": "备份",
+            "assertions": 7,
+            "button": "备份数据库保存与恢复读取",
+            "expected": "备份可打开且账号报名日志数量一致",
+            "id": "Q08",
+            "status": "PASS",
+            "steps": "保存备份后用独立连接读取检查"
+        },
+        {
+            "actual": "提示不一致，原始业务库未受影响",
+            "area": "备份",
+            "assertions": 6,
+            "button": "完整性异常提示",
+            "expected": "提示不一致，原始业务库未受影响",
+            "id": "Q09",
+            "status": "PASS",
+            "steps": "临时破坏已发布票种座位数后点击检查"
+        },
+        {
+            "actual": "他人筛选为空，本人筛选可查询",
+            "area": "日志",
+            "assertions": 17,
+            "button": "参与者查询他人日志",
+            "expected": "他人筛选为空，本人筛选可查询",
+            "id": "Q10",
+            "status": "PASS",
+            "steps": "参与者日志中筛选其他操作者再查询自己"
+        },
+        {
+            "actual": "状态已签到且记录首次时间",
+            "area": "检票",
+            "assertions": 3,
+            "button": "核验并签到卡片按钮",
+            "expected": "状态已签到且记录首次时间",
+            "id": "C01",
+            "status": "PASS",
+            "steps": "对已开始场次的已报名人员点击签到"
+        },
+        {
+            "actual": "返回失败，不增加首次签到或日志",
+            "area": "检票",
+            "assertions": 8,
+            "button": "重复签到菜单",
+            "expected": "返回失败，不增加首次签到或日志",
+            "id": "C02",
+            "status": "PASS",
+            "steps": "选中已签到人员并再次触发签到"
+        },
+        {
+            "actual": "检票员页面不显示未分配场次记录",
+            "area": "检票",
+            "assertions": 1,
+            "button": "未分配场次名单隔离",
+            "expected": "检票员页面不显示未分配场次记录",
+            "id": "C03",
+            "status": "PASS",
+            "steps": "检查免费讲座的原报名编号3"
+        }
+    ],
+    "failed": 0,
+    "platform": "offscreen",
+    "qt_version": "5.15.13"
+}

@@ -1,0 +1,12 @@
+范围：手写 src/*.cpp 与 include/**/*.h；不含测试、工具、第三方依赖和构建目录。
+口径：物理行数与非空行数；非空行仍含注释，不冒称纯代码 SLOC。
+文件	物理行数	非空行数
+src/cli.cpp	155	150
+src/database.cpp	371	345
+src/main.cpp	55	54
+src/service.cpp	1898	1813
+src/window.cpp	2137	2091
+include/campus/database.h	68	57
+include/campus/service.h	172	162
+include/campus/window.h	69	65
+合计	4925	4737

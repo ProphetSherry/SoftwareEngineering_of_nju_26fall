@@ -1,0 +1,313 @@
+PASS L01 登录页底部三个导航
+PASS L02 首次使用 · 初始化管理员
+This plugin does not support propagateSizeHints()
+PASS L03 重复初始化
+This plugin does not support propagateSizeHints()
+PASS L04 登录错误密码
+PASS L05 密码框回车登录
+This plugin does not support raise()
+This plugin does not support grabbing the keyboard
+PASS L06 右上角更多菜单
+PASS L07 退出登录
+PASS N01 student 登录
+PASS N02 student → 发现活动
+PASS N03 student → 我的报名
+PASS N04 student → 操作记录
+PASS N-MSG 消息通知
+PASS N05 student 退出
+PASS N06 organizer 登录
+PASS N07 organizer → 我的活动
+PASS N08 organizer → 报名与收退款
+PASS N09 organizer → 统计与导出
+PASS N10 organizer → 操作记录
+PASS N-REQ 我的申请菜单与页面按钮
+PASS N11 organizer 退出
+PASS N12 admin 登录
+PASS N13 admin → 活动审核
+PASS N14 admin → 账号管理
+PASS N15 admin → 检票分配
+PASS N16 admin → 操作记录
+PASS N17 admin 退出
+PASS N18 checker 登录
+PASS N19 checker → 分配场次与检票
+PASS N20 checker 退出
+This plugin does not support propagateSizeHints()
+PASS P01 筛选取消
+This plugin does not support propagateSizeHints()
+PASS P02 筛选确认
+PASS P03 搜索框回车
+This plugin does not support propagateSizeHints()
+PASS P04 清空组合筛选
+PASS P05 类别地点日期下拉框
+PASS P06 查看活动
+PASS P07 返回发现活动
+PASS P08 选择票种
+PASS P09 票种单选按钮
+PASS P10 返回活动详情
+PASS P11 确认报名
+PASS P12 取消报名卡片按钮
+This plugin does not support propagateSizeHints()
+PASS P13 重复报名拦截
+PASS P14 取消本人报名菜单
+PASS P15 多个票种单选与价格更新
+This plugin does not support setParent!
+This plugin does not support setParent!
+PASS D01 新建活动与取消返回
+This plugin does not support setParent!
+This plugin does not support setParent!
+This plugin does not support propagateSizeHints()
+PASS D02 保存空名称
+PASS D03 添加场次 ＋
+PASS D04 移除此场次
+PASS D05 添加票种 ＋
+PASS D06 移除此票种
+PASS D07 按容量生成座位编号
+PASS D08 保存活动草稿
+This plugin does not support setParent!
+This plugin does not support setParent!
+PASS D09 编辑活动卡片
+PASS D10 卡片提交发布审核
+PASS D11 查看待审核申请
+PASS D12 撤回申请卡片按钮
+PASS D13 菜单提交发布审核
+PASS D14 撤回待审核申请活动按钮
+This plugin does not support setParent!
+This plugin does not support setParent!
+This plugin does not support propagateSizeHints()
+PASS D14B 提交不合法时间
+This plugin does not support setParent!
+This plugin does not support setParent!
+PASS D15 保存并提交发布审核
+This plugin does not support propagateSizeHints()
+PASS D16 查看原版本与申请内容
+This plugin does not support propagateSizeHints()
+PASS D16B 查看原内容与候选内容菜单
+PASS D17 撤回选中申请菜单
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS D18 管理员批准首次发布
+This plugin does not support propagateSizeHints()
+PASS O01 添加场次取消
+This plugin does not support propagateSizeHints()
+PASS O02 添加场次确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O03 添加票种取消选择
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O04 添加票种确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O04B 新增票种座位冲突
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O05 编辑草稿场次取消
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O06 编辑草稿场次确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O07 编辑草稿票种确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O07B 编辑票种重复座位
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O08 删除票种取消
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O09 删除草稿票种
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS O10 删除草稿场次
+PASS O11 删除草稿菜单
+PASS O12 删除草稿卡片
+PASS R01 已发布编辑取消
+PASS R02 编辑活动 / 申请发布后修改
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R03 为修改申请添加场次变更
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R04 修改申请中新增票种
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R05 修改申请中修改原票种
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R06 通过审核取消
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R07 通过审核确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R08 拒绝申请空原因
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R09 拒绝申请有效原因
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-C1 申请取消 event
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-CA1 批准取消 event
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-C2 申请取消 session
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-CA2 批准取消 session
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-C3 申请取消 ticket
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS R-CA3 批准取消 ticket
+This plugin does not support propagateSizeHints()
+PASS A01 创建新账号取消
+This plugin does not support propagateSizeHints()
+PASS A02 创建新账号确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS A03 重复账号创建
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS A04 创建账号短密码
+PASS A05 编辑 › 与取消返回
+PASS A06 保存账号修改
+PASS A07 启用 / 停用菜单
+PASS A07B 停用及重新启用菜单
+PASS A08 编辑账号菜单
+This plugin does not support propagateSizeHints()
+PASS A08B 编辑角色与空姓名拒绝
+PASS A09 保护当前管理员
+This plugin does not support propagateSizeHints()
+PASS A09B 当前管理员停用菜单
+PASS A10 确认分配
+PASS A11 新增候选排除重复
+PASS A12 确认撤销分配
+PASS A13 活动场次人员联动
+PASS A14 刷新与时间冲突过滤
+PASS A15 创建新人员后刷新
+PASS A16 已结束场次切换与撤销
+This plugin does not support propagateSizeHints()
+PASS M01 确认线下收款 → 否
+This plugin does not support propagateSizeHints()
+PASS M02 确认线下收款 → 是
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M03 重复确认收款菜单
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M04 确认线下退款 → 否
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M05 确认线下退款 → 是
+PASS M06 报名状态筛选
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M07 异常实收金额取消
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M08 登记异常实收确认
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+This plugin does not support propagateSizeHints()
+PASS M09 确认已完成线下全额退款菜单
+PASS Q01 活动场次票种状态筛选
+This plugin does not support propagateSizeHints()
+PASS Q02 导出CSV取消
+This plugin does not support propagateSizeHints()
+PASS Q03 导出CSV保存
+PASS Q04 查询日志有效组合
+PASS Q05 查询日志空结果与SQL字符
+PASS Q06 检查数据完整性
+This plugin does not support propagateSizeHints()
+PASS Q07 备份数据库取消
+This plugin does not support propagateSizeHints()
+PASS Q08 备份数据库保存与恢复读取
+This plugin does not support propagateSizeHints()
+PASS Q09 完整性异常提示
+PASS Q10 参与者查询他人日志
+PASS C01 核验并签到卡片按钮
+This plugin does not support propagateSizeHints()
+PASS C02 重复签到菜单
+PASS C03 未分配场次名单隔离
+134 cases, 0 failures, 1122 assertions

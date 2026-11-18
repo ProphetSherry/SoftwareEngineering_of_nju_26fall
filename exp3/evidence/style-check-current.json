@@ -1,0 +1,15 @@
+{
+  "cpplint": {
+    "exit_code": 0,
+    "log": "style-check-current.log"
+  },
+  "clang-format": {
+    "exit_code": 0,
+    "log": "format-check-current.log"
+  },
+  "date": "2026-11-18",
+  "versions": {
+    "cpplint": "2.0.2",
+    "clang-format": "23.1.5"
+  }
+}

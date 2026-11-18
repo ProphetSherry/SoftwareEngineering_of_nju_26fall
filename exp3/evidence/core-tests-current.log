@@ -1,0 +1,27 @@
+PASS complete_published_edit
+PASS complete_published_edit_protection
+PASS queue_and_cancellation
+PASS payment_and_refund
+PASS timeout_boundary
+PASS seats_checkin_absence
+PASS review_gates
+PASS edit_and_notifications
+PASS expiry_and_privacy
+PASS rollback_backup_csv
+PASS concurrent_last_seat
+PASS draft_validation
+PASS draft_editing
+PASS published_ticket_protection
+PASS original_ticket_queue
+PASS cancellation_gates_and_history
+PASS assignment_management
+PASS assignment_time_conflicts
+PASS assignment_time_edit_protection
+PASS concurrent_checker_schedule
+PASS complete_draft_workflow
+PASS draft_partial_and_rollback
+PASS review_withdrawal_lifecycle
+PASS concurrent_review_withdrawal
+PASS account_editing
+PASS account_edit_history_and_rollback
+174 assertions, 26 scenarios, 0 failures
