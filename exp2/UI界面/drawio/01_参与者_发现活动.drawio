@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="01_参与者_发现活动" id="BhDRsuNDW_iEuNPQT8Li">
+    <mxGraphModel dx="1381" dy="892" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-2" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F3F5F2;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="852" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-3" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=none;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="57" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-4" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=22;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="校园活动" vertex="1">
+          <mxGeometry height="35" width="190" x="8" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-5" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="参与者" vertex="1">
+          <mxGeometry height="28" width="108" x="277" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-8" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="83" width="393" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-9" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="44" width="107" x="12" y="777" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-10" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="发现活动" vertex="1">
+          <mxGeometry height="44" width="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-11" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="我的报名" vertex="1">
+          <mxGeometry height="44" width="131" x="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-12" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="操作记录" vertex="1">
+          <mxGeometry height="44" width="131" x="262" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-13" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="搜索活动或关键词" vertex="1">
+          <mxGeometry height="46" width="274" x="16" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-14" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=15;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="筛选" vertex="1">
+          <mxGeometry height="48" width="77" x="300" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-15" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="类别 ▾" vertex="1">
+          <mxGeometry height="44" width="112" x="16" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-16" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="地点 ▾" vertex="1">
+          <mxGeometry height="44" width="112" x="140" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-17" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="日期 ▾" vertex="1">
+          <mxGeometry height="44" width="113" x="264" y="131" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-18" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="192" width="361" x="16" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-19" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#216249;fontSize=23;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="文艺演出" vertex="1">
+          <mxGeometry height="76" width="337" x="28" y="203" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-20" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="秋日草坪音乐会" vertex="1">
+          <mxGeometry height="30" width="337" x="24" y="288" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-21" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="11月14日 18:30，仙林校区四组团体育场" vertex="1">
+          <mxGeometry height="25" width="337" x="24" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-22" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=16;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="¥20 起" vertex="1">
+          <mxGeometry height="26" width="110" x="24" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-23" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#216249;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="查看活动  ›" vertex="1">
+          <mxGeometry height="32" width="130" x="235" y="343" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-24" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="190" width="361" x="16" y="399" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-25" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#216249;fontSize=23;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="校园讲座" vertex="1">
+          <mxGeometry height="74" width="337" x="28" y="411" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-26" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="大气活性物种的检测及应用" vertex="1">
+          <mxGeometry height="30" width="337" x="24" y="493" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-27" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="11月15日 19:00，大气楼D103报告厅" vertex="1">
+          <mxGeometry height="25" width="337" x="24" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="0Hw6QIk_VCIPSqUz3Tgp-28" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=16;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="免费" vertex="1">
+          <mxGeometry height="24" width="120" x="24" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="FtM0XRaEzTCpXMbnhnOo-1" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#216249;fontSize=13;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="查看活动  ›" vertex="1">
+          <mxGeometry height="32" width="130" x="231" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

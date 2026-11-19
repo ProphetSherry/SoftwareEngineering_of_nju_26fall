@@ -1,0 +1,158 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图1 领域类图（按 exp3 实现更新，2026-11-18）
+hide empty members
+skinparam classAttributeIconSize 0
+class "用户 users" as User {
+ +id: Integer
+ +username: String {unique}
+ +name / role / enabled
+ +salt / password_hash
+}
+class "活动 events" as Event {
+ +id / owner_id: Integer
+ +name / category / description
+ +status: draft | published | cancelled
+ +version: Integer
+}
+class "场次 sessions" as Session {
+ +id: Integer
+ +name / location
+ +deadline / start / end: Timestamp
+ +capacity: Integer
+ +cancelled: Boolean
+}
+class "票种 tickets" as Ticket {
+ +id: Integer
+ +name: String
+ +price: Integer（分）
+ +capacity: Integer
+ +cancelled: Boolean
+}
+class "座位 seats" as Seat {
+ +id: Integer
+ +label: String
+}
+class "报名 registrations" as Registration {
+ +id: Integer
+ +status: 六种报名状态
+ +created / confirmed / payment_due
+ +checked_at / seat_id: Optional
+}
+class "版本 versions" as Version {
+ +number: Integer
+ +snapshot: Text
+ +effective: Timestamp
+}
+class "审核申请 reviews" as Review {
+ +id / target_id: Integer
+ +kind: publish | edit | cancel
+ +scope: event | session | ticket
+ +status: pending | approved | rejected
+ +status: withdrawn | expired
+ +reason / created / applicant / reviewer
+}
+class "修改候选（逻辑聚合）" as Candidate {
+ +proposals: 活动基本信息
+ +session_proposals: 原场次字段
+ +session_name_proposals: 原场次名称
+ +ticket_proposals: 原场次票种修改或新增
+}
+class "新增场次候选 new_session_proposals" as NewSession {
+ +id / review_id
+ +name / location / deadline / start / end / capacity
+}
+class "新增场次票种 new_session_tickets" as NewTicket {
+ +name / price / capacity / labels
+}
+class "收款 receipts" as Receipt {
+ +amount: Integer（分）
+ +confirmed / actor / abnormal
+}
+class "退款 refunds" as Refund {
+ +receipt_id: Integer {unique}
+ +reason / status: pending | completed
+ +completed / actor
+}
+class "检票分配 assignments" as Assignment {
+ +session_id / checker_id: 复合主键
+}
+class "站内通知 notifications" as Notification {
+ +message / time
+}
+class "操作日志 logs" as Log {
+ +actor / event_id / user_id
+ +object_type / object_id / action
+ +before_state / after_state / result
+ +request_id / time
+}
+class "成功请求 requests" as Request {
+ +id: String {primary key}
+ +actor / result / time
+}
+User "1" -- "0..*" Event : 组织者拥有
+Event "1" *-- "0..*" Session
+Session "1" *-- "0..*" Ticket
+Ticket "1" *-- "0..*" Seat
+Session "1" -- "0..*" Seat : 场次内 label 唯一
+User "1" -- "0..*" Registration : 参与者
+Event "1" -- "0..*" Registration
+Session "1" -- "0..*" Registration
+Ticket "1" -- "0..*" Registration
+Registration "0..1" -- "0..1" Seat
+Event "1" *-- "0..*" Version
+Event "1" -- "0..*" Review
+User "1" -- "0..*" Review : applicant
+User "0..1" -- "0..*" Review : reviewer
+Review "1" *-- "0..1" Candidate : 修改审核
+Candidate ..> Session : 保留原编号
+Candidate ..> Ticket : 保留原编号
+Review "1" *-- "0..*" NewSession
+NewSession "1" *-- "1..*" NewTicket
+Registration "1" -- "0..*" Receipt
+Receipt "1" -- "0..1" Refund : 原实收全额
+User "1" -- "0..*" Assignment : checker
+Session "1" -- "0..*" Assignment
+User "1" -- "0..*" Notification
+Event "1" -- "0..*" Notification
+Log ..> Request : request_id 关联（非外键）
+Log ..> Event : 授权追溯
+note bottom of User
+ 单账号单角色：participant / organizer / admin / checker。
+ 管理员可修改姓名、角色及启用状态；不修改登录名和密码。
+ 自身管理员身份不可降级/停用；业务关联限制改角色。
+end note
+note bottom of Review
+ 同活动仅允许一条 pending 申请（部分唯一索引）。
+ 本人可撤回待审申请，保留候选及历史，再次提交不冲突。
+ 完整修改统一审核；提交预校验，批准时再次校验。
+ 批准前原版本、报名关联及通知不变；失败整笔回滚。
+end note
+note bottom of Assignment
+ 一个检票员可负责多个时间不冲突的有效场次。
+ 冲突条件：startA < endB 且 startB < endA。
+ 相邻场次允许；新增分配及场次改时审批均检查。
+ 允许撤销分配，包括停用检票员的历史分配。
+end note
+note bottom of Ticket
+ 草稿可缺场次、地点或票种；提交发布必须完整。
+ 完整配置：座位数=票种容量，票种容量和≤场次容量。
+ 有报名历史锁原票价；已排座锁原座位范围和缩容。
+ 已发布条目不能直接删除，取消单独申请审核。
+end note
+note bottom of Registration
+ UNIQUE(user_id,event_id) 覆盖全部历史，取消后不能重报。
+ 占用按 pending / registered / checked 查询计算，不存计数器。
+ 资金状态独立；金额以整数分保存，数据库编号为整数。
+end note
+note as Implementation
+ 本图是数据库支持的领域模型，不声称这些实体各有 C++ 类。
+ 真实 C++ 类型及依赖见图5；业务操作由 Service 统一执行。
+end note
+
+@enduml

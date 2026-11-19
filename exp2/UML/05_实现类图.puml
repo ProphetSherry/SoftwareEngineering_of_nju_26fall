@@ -1,0 +1,122 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图5 C++ 实现类图（结构性图）
+hide empty members
+skinparam classAttributeIconSize 0
+class QMainWindow <<Qt>>
+class QFrame <<Qt>>
+class "campus::Window" as Window {
+ -service_: Service
+ -draft_event_: Row
+ -editing_user_: Row
+ -displayed_: Rows
+ -registration_event_ / registration_session_ / registration_status_
+ -CreateEventPage()
+ -EditUserPage()
+ -AssignmentPage()
+ -RegistrationsPage()
+ -ReviewsPage()
+ -Run(action, refresh)
+}
+class "SessionEditor（匿名命名空间）" as SE {
+ +id / removed / published / tickets_locked
+ +Read(): DraftSession
+ +AddTicket(input)
+}
+class "TicketEditor（匿名命名空间）" as TE {
+ +id / removed
+ +Read(): DraftTicket
+}
+class "campus::Service" as Service {
+ -database_: Database
+ -clock_: function<int64_t()>
+ -user_id_: string
+ +EditUser(user, name, role, enabled, request)
+ +SaveDraft(event, name, category, description, sessions, submit, request)
+ +EventConfiguration(event): vector<DraftSession>
+ +ProposeCompleteEdit(event, name, category, description, sessions, request)
+ +Withdraw(review, request)
+ +Decide(review, approved, reason, request)
+ +Assign(session, checker, remove, request)
+ +Registrations(event, filter): Rows
+ +Register() / Cancel() / Receive() / CheckIn()
+ +Tick() / ExportCsv() / Backup()
+ -ApplyEventEdit(review, event, request)
+ -CheckerConflict(checker, session)
+ -ValidateAssignmentSchedule(event)
+ -Require() / Own() / BeginRequest() / Log()
+}
+class "campus::Database" as Database {
+ -handle_: sqlite3*
+ +Execute(sql, parameters)
+ +Query(sql, parameters): Rows
+ +One(sql, parameters): Row
+ +Backup(destination)
+ +CheckIntegrity()
+ -Initialize()
+}
+class "campus::Transaction" as Transaction {
+ -database_: Database&
+ -committed_: bool
+ +Transaction(database)
+ +Commit()
+ +~Transaction(): 未提交则回滚
+}
+class "campus::SessionInput" as SI <<struct>> {
+ +name / location: string
+ +deadline / start / end: int64_t
+ +capacity: int
+}
+class "campus::DraftSession" as DS <<struct>> {
+ +id: string
+ +details: SessionInput
+ +tickets: vector<DraftTicket>
+ +deadline_locked / cancelled: bool
+}
+class "campus::DraftTicket" as DT <<struct>> {
+ +id / name: string
+ +price_cents / capacity: int
+ +seats: Params
+ +price_locked / seats_locked / cancelled: bool
+}
+class "campus::Search" as Search <<struct>> {
+ +keyword / category / location / date / status / session
+}
+class "campus::Error" as Error
+class "std::runtime_error" as RuntimeError
+QMainWindow <|-- Window
+QFrame <|-- SE
+QFrame <|-- TE
+Window "1" *-- "1" Service
+Window ..> SE : 完整草稿 / 发布后编辑页面
+SE "1" *-- "0..*" TE : Qt 父子控件生命周期
+SE ..> DS : Read()
+TE ..> DT : Read()
+DS *-- SI
+DS "1" *-- "0..*" DT
+Service "1" *-- "1" Database
+Service ..> Transaction : 每次写操作创建
+Transaction --> Database : 引用
+Service ..> DS : 配置读写及候选校验
+Service ..> Search : 查询条件
+Window ..> Search
+Database ..> Error : SQL / 完整性异常
+RuntimeError <|-- Error
+note bottom of Service
+ 所有受限入口重新校验账号状态、角色与对象权限。
+ 领域记录用 Row / Rows 返回：map<string,string> 及其 vector。
+ 图1中的 User、Event 等不是本项目单独的 C++ 类。
+ 金额整数分；时间 Unix 秒；数据库整数 ID 通过 string 传递。
+end note
+note bottom of DS
+ DraftSession / DraftTicket 同时用于草稿及已发布配置。
+ 锁定标记由服务端计算，供 UI 禁用字段；
+ 服务端提交和审批仍再次校验，不依赖控件限制。
+end note
+
+@enduml

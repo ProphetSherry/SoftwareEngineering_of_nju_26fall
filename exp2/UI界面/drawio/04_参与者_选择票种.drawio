@@ -1,0 +1,70 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram id="mobile-4" name="04_参与者_选择票种">
+    <mxGraphModel dx="1381" dy="892" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="393" pageHeight="852" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F3F5F2;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="852" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=none;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="57" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=22;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="校园活动" vertex="1">
+          <mxGeometry height="35" width="190" x="8" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="参与者" vertex="1">
+          <mxGeometry height="28" width="108" x="277" y="14" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=24;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="选择票种" vertex="1">
+          <mxGeometry height="37" width="380" x="4" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="83" width="393" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#E5F0E8;strokeColor=none;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="44" width="107" x="12" y="777" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="发现活动" vertex="1">
+          <mxGeometry height="44" width="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="我的报名" vertex="1">
+          <mxGeometry height="44" width="131" x="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="操作记录" vertex="1">
+          <mxGeometry height="44" width="131" x="262" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="105" width="361" x="16" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="普通票" vertex="1">
+          <mxGeometry height="28" width="220" x="24" y="142" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=13;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="剩余12个名额" vertex="1">
+          <mxGeometry height="26" width="220" x="24" y="181" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="¥20   ●" vertex="1">
+          <mxGeometry height="40" width="100" x="264" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="105" width="361" x="16" y="247" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="前排票" vertex="1">
+          <mxGeometry height="28" width="220" x="24" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=13;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="已满，可进入候补" vertex="1">
+          <mxGeometry height="26" width="220" x="24" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=18;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="¥35   ○" vertex="1">
+          <mxGeometry height="40" width="100" x="264" y="269" as="geometry" />
+        </mxCell>
+        <mxCell id="23" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=20;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="应付金额：¥20" vertex="1">
+          <mxGeometry height="35" width="380" x="4" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="24" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#216249;strokeColor=#216249;fontColor=#FFFFFF;fontSize=15;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="确认报名" vertex="1">
+          <mxGeometry height="48" width="361" x="16" y="429" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

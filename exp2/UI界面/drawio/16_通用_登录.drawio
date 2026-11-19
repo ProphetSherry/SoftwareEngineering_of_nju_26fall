@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram id="mobile-24" name="24_通用_登录">
+    <mxGraphModel dx="1381" dy="892" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="393" pageHeight="852" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#F3F5F2;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="852" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=none;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="57" width="393" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#202D2B;fontSize=22;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="校园活动" vertex="1">
+          <mxGeometry height="35" width="190" x="8" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=0;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="" vertex="1">
+          <mxGeometry height="83" width="393" y="769" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="发现活动" vertex="1">
+          <mxGeometry height="44" width="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="我的报名" vertex="1">
+          <mxGeometry height="44" width="131" x="131" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="操作记录" vertex="1">
+          <mxGeometry height="44" width="131" x="262" y="778" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#216249;fontSize=23;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="发现活动，连接校园" vertex="1">
+          <mxGeometry height="42" width="380" x="4" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="账号" vertex="1">
+          <mxGeometry height="22" width="361" x="16" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="请输入账号" vertex="1">
+          <mxGeometry height="48" width="361" x="16" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="密码" vertex="1">
+          <mxGeometry height="22" width="361" x="16" y="221" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="••••••••" vertex="1">
+          <mxGeometry height="48" width="361" x="16" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#216249;strokeColor=#216249;fontColor=#FFFFFF;fontSize=15;fontFamily=Microsoft YaHei;align=center;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=1;" value="登录" vertex="1">
+          <mxGeometry height="48" width="361" x="16" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="xXPBEyAk7hCYEWcFqSNw-18" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=none;strokeColor=none;fontColor=#607269;fontSize=12;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="选择身份" vertex="1">
+          <mxGeometry height="22" width="361" x="16" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="xXPBEyAk7hCYEWcFqSNw-19" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#FFFFFF;strokeColor=#DCE3DD;fontColor=#202D2B;fontSize=14;fontFamily=Microsoft YaHei;align=left;verticalAlign=middle;spacingLeft=12;spacingRight=10;arcSize=10;fontStyle=0;" value="默认参与者" vertex="1">
+          <mxGeometry height="48" width="361" x="16" y="346" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

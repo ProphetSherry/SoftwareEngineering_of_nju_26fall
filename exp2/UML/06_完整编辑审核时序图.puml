@@ -1,0 +1,71 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图6 完整活动修改、撤回与审核（交互性图）
+autonumber
+actor "组织者" as Owner
+boundary "Window / SessionEditor / TicketEditor" as UI
+control "Service" as S
+database "SQLite / Database" as DB
+actor "管理员" as Admin
+Owner -> UI : 编辑已发布活动
+UI -> S : EventConfiguration(event)
+S -> DB : 查询现行场次、票种、座位及报名
+S --> UI : 完整配置 + 票价/座位/截止锁定标记
+Owner -> UI : 修改基本信息、场次、票种\n可新增场次和票种
+UI -> S : ProposeCompleteEdit(..., sessions, request)
+S -> DB : BEGIN IMMEDIATE
+S -> S : Own / BeginRequest / NewReview
+S -> DB : 创建 edit pending 申请及各候选记录
+S -> S : 检查原条目归属、完整性和不得直接删除
+S -> DB : SAVEPOINT validate_edit_candidate
+S -> S : ApplyEventEdit(review, event, request)
+S -> DB : 试应用候选并校验容量、座位、报名\n时间、价格及检票员排班
+alt 候选不合法或同活动已有待审
+ S -> DB : ROLLBACK 整个事务
+ S --> UI : 明确业务错误，无半份申请
+else 候选合法
+ S -> DB : ROLLBACK TO / RELEASE SAVEPOINT
+ S -> DB : 保留候选、提交日志及请求结果，COMMIT
+ S --> UI : 转到“我的申请”
+ note over S,DB : 当前发布内容、版本号、报名引用和通知保持原样。
+ alt 组织者主动撤回（仍 pending）
+  Owner -> UI : 撤回申请
+  UI -> S : Withdraw(review, request)
+  S -> DB : BEGIN IMMEDIATE；校验本人及 pending\nstatus=withdrawn；日志、请求；COMMIT
+  S --> UI : 保留历史和原版，可重新编辑提交
+ else 管理员审批
+  Admin -> UI : 查看原内容与候选内容
+  UI -> S : ReviewDetails(review)
+  S --> UI : 原版、原场次/票种候选及新增场次/票种
+  Admin -> UI : 通过或拒绝（拒绝原因必填）
+  UI -> S : Decide(review, approved, reason, request)
+  S -> DB : BEGIN IMMEDIATE；校验管理员及 pending
+  alt 拒绝
+   S -> DB : status=rejected，保留原内容
+  else 批准
+   S -> S : ApplyEventEdit() 再次校验当前业务状态
+   alt 约束已变化或任意写入失败
+    S -> DB : ROLLBACK，申请仍 pending，原版不变
+    S --> UI : 提示失败，允许撤回调整
+   else 当前仍合法
+    S -> DB : 更新原场次票种、创建新增条目\n递增版本并保存快照\n时间地点变化生成站内通知\nstatus=approved
+   end
+  end
+  opt 审批结果成功写入
+   S -> DB : 保存审批日志、请求结果；COMMIT
+   S --> UI : 刷新审核记录
+  end
+ end
+end
+note over Owner,DB
+ 草稿走 SaveDraft(..., submit=false)：允许不完整并原子保存。
+ SaveDraft(..., submit=true)：完整校验并生成首次发布申请。
+ 首次发布批准时再次检查所有场次未截止，随后正式发布。
+end note
+
+@enduml

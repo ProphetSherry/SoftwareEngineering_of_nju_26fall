@@ -1,0 +1,50 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图3 报名生命周期（当前实现，行为性图）
+state "候补" as Waiting
+state "待付款" as Pending
+state "已报名" as Registered
+state "已取消" as Cancelled
+state "已签到" as Checked
+state "缺席" as Absent
+state Entry <<choice>>
+[*] --> Entry : 合法报名，确定初始状态
+Entry --> Waiting : 合法报名 [容量不足或存在合格原票种候补]\n/ 入队，不占位
+Entry --> Pending : 合法报名 [两级有空位、无合格候补、收费]\n/ 占位；期限=min(成功时间+30分钟,截止)
+Entry --> Registered : 合法报名 [两级有空位、无合格候补、免费]\n/ 占位，记录免费排序时间
+Waiting --> Pending : 递补 [收费、原票种及场次有位、截止前、未暂停]\n/ 占位，从递补成功计付款期限
+Waiting --> Registered : 递补 [免费、原票种及场次有位、截止前、未暂停]\n/ 占位，记录递补排序时间
+Waiting --> Cancelled : 截止前本人取消 / 到达截止 / 合法对象取消通过\n/ 不改变占用
+Pending --> Registered : 本活动组织者确认实收款\n[当前时间<付款期限、无取消待审/已取消]\n/ 保存收款，不增加占用
+Pending --> Cancelled : 付款到期 / 到达截止 / 截止前本人取消 / 合法对象取消通过\n/ 释放两级名额，允许时触发递补
+Registered --> Cancelled : 截止前本人取消 / 合法对象取消通过\n/ 释放名额；实际收款者待全额退款
+Registered --> Checked : 授权检票 [开始≤当前时间<结束、无取消待审/已取消]\n/ 保存首次签到时间，占用不变
+Registered --> Absent : 到达场次结束 [场次未取消，含取消待审]\n/ 缺席单列，不再计占用
+note right of Checked
+  不因对象取消改变已签到状态。
+  未结束场次取消通过，实际收款者仍待退款。
+  重复验票返回失败，不保存失败业务日志。
+end note
+note bottom of Cancelled
+  已取消、已签到、缺席均无报名状态出边。
+  已结束场次历史不受后续活动取消影响。
+  退款独立进行，不改变报名状态。
+end note
+note left of Absent
+  取消待审跨过场次结束：
+  该场次取消申请失效；仍处理缺席。
+  特殊暂停验票退款认定尚未实现，
+  不能视为已有自动退款分支。
+end note
+legend bottom
+  合法报名：已发布且未取消、未暂停，服务器时间严格早于截止，
+  通过角色/对象权限、用户活动全历史唯一性及重复请求校验。
+  修改待审暂停报名及递补；取消待审还暂停收款确认与验票。
+  图中未列出的报名状态转换一律拒绝。
+endlegend
+@enduml

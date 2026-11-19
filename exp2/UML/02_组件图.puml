@@ -1,0 +1,84 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图2 当前实现的组件与依赖（结构性图）
+left to right direction
+actor "四类用户" as User
+package "C++17 本地应用" {
+ component "campus_gui\nQt Widgets / Window\n393×852 手机风格窗口" as GUI
+ component "campus_cli\n命令行工具" as CLI
+ component "QTimer\n窗口运行时周期触发" as Timer
+ package "campus_core：Service 内的逻辑职责（非独立服务）" {
+  component "账号、登录与权限\nCreateUser / EditUser / Require / Own" as Auth
+  component "完整活动配置\nSaveDraft / EventConfiguration" as Event
+  component "审核、修改与撤回\nProposeCompleteEdit / Decide / Withdraw" as Review
+  component "报名与候补\nRegister / Cancel / Promote" as Reg
+  component "线下收退款\nReceive / AbnormalReceipt / CompleteRefund" as Money
+  component "座位与检票\nAllocate / Assign / CheckIn" as Check
+  component "查询、统计与导出\nSearch / Registrations / Statistics / ExportCsv" as Query
+  component "日志、请求与站内通知\nLog / BeginRequest / Notifications" as Audit
+  component "定时处理 Tick\n超时、截止、缺席、失效、递补、排座" as Tick
+ }
+ component "Database / Transaction\n参数化 SQL / RAII\nBEGIN IMMEDIATE" as TX
+}
+database "本地 SQLite\n外键 / WAL / 唯一约束" as DB
+artifact "SQLite 备份文件\n每日备份 / 管理员备份" as Backup
+artifact "CSV UTF-8 BOM\n活动、场次、票种与状态过滤" as CSV
+component "CMake + CTest\n核心 / GUI / 逐按钮测试" as Test
+User --> GUI
+User --> CLI
+GUI --> Auth
+GUI --> Event
+GUI --> Review
+GUI --> Reg
+GUI --> Money
+GUI --> Check
+GUI --> Query
+CLI --> Auth
+CLI --> Query
+GUI *-- Timer
+Timer --> Tick : Service::Tick()
+Review --> Event : 校验 / 应用候选 / 保存版本
+Review --> Check : 重检检票员时段冲突
+Review --> Audit : 原版本对照 / 时间地点变更通知
+Reg --> Money : 取消生成待退款
+Money --> Reg : 收款、超时与递补
+Tick --> Reg
+Tick --> Check
+Tick --> Review
+Query --> CSV
+Auth --> TX
+Event --> TX
+Review --> TX
+Reg --> TX
+Money --> TX
+Check --> TX
+Query --> TX
+Audit --> TX
+Tick --> TX
+TX --> DB
+TX --> Backup : SQLite backup API
+Test ..> GUI
+Test ..> TX
+note bottom of TX
+ 写操作使用 BEGIN IMMEDIATE 串行化；未提交即析构回滚。
+ 成功请求、业务状态、日志处于同一事务。
+ 完整修改提交使用 SAVEPOINT 试应用再回滚，仅保留候选。
+ 容量由报名状态聚合查询；没有行锁、远程数据库或 HTTP API。
+end note
+note bottom of Query
+ 组织者报名页按活动、场次、状态组合筛选。
+ 切换活动后重置场次；全部活动恢复授权名单。
+ 管理员不代组织者读取参与者报名名单。
+end note
+note bottom of Tick
+ 本地窗口关闭后没有独立常驻调度服务。
+ 自动任务使用 system 操作者；完成后恢复当前登录身份。
+ 每日备份在 Tick 提交后执行；恢复需离线替换并校验。
+end note
+
+@enduml

@@ -1,0 +1,59 @@
+@startuml
+skinparam defaultFontName Noto Sans CJK SC
+skinparam defaultFontSize 14
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam ArrowColor #385170
+skinparam roundcorner 8
+title 图4 取消本人报名与原票种候补递补（实际调用时序）
+autonumber
+actor "参与者" as User
+boundary "Window" as UI
+control "Service" as S
+participant "Transaction" as TX
+database "SQLite / Database" as DB
+User -> UI : 取消报名
+UI -> S : Cancel(registration, request)
+S -> TX : 构造 Transaction(database_)
+TX -> DB : BEGIN IMMEDIATE
+S -> S : Require(participant) / BeginRequest
+S -> DB : 查询本人报名、原票种和场次
+S -> S : 校验所有权、当前时间 < 截止\n状态为 waiting / pending / registered
+alt 校验失败或请求已成功
+ S --> UI : 抛出 Error
+ TX -> DB : 析构 ROLLBACK
+ UI --> User : 显示业务提示
+else 合法取消
+ S -> S : Transition(..., cancelled)
+ S -> DB : 更新状态并写取消日志
+ note over S,DB : 两级占用从状态聚合计算，\n无需更新容量计数器。
+ S -> S : Refund(registration, 本人取消)
+ S -> DB : INSERT OR IGNORE refunds\n关联该报名全部实际收款
+ S -> S : Promote(原票种, request)
+ alt 已截止 / 活动取消 / 范围门禁阻止
+  note over S : 跳过递补；本人取消仍然提交。
+ else 可递补
+  S -> DB : 查询原票种 waiting，ORDER BY created,id
+  loop 依序且场次及票种均有空位
+   S -> S : Available(ticket)
+   alt 免费票
+    S -> DB : 改 registered，记录 confirmed
+   else 收费票
+    S -> DB : 改 pending\npayment_due=min(now+1800,deadline)
+   end
+   S -> DB : 同事务保存递补日志
+  end
+ end
+ S -> DB : EndRequest 保存成功请求和结果
+ S -> TX : Commit()
+ TX -> DB : COMMIT
+ S --> UI : 返回成功
+ UI --> User : 刷新我的报名
+end
+note over S,DB
+ 任一 SQL、日志或业务校验异常都回滚本次全部写入。
+ 候补按原票种递补；不跨票种挪用座位。
+ 已取消报名不因退款或后续编辑恢复。
+end note
+
+@enduml
